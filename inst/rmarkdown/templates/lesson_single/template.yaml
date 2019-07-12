@@ -1,0 +1,4 @@
+name: lesson_single
+description: >
+   A single R Markdown lesson
+create_dir: FALSE
