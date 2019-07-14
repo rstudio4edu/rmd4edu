@@ -11,13 +11,13 @@ output:
 
 This is a single lesson template.
 
-# Adding an RMarkdown Template
+# Make it your own
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+* To edit the footer information, open up the file `footer.html`. 
+* To edit the logo, open up the file `styles.css`.
 
-This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
-
+Check out our resource at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
 
 # Goodbye!
 
-Finally, be sure to remove this message!
+Be sure to remove this message!
