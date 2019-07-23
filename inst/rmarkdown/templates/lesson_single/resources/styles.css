@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Karla:400,400i,700,700i|Lora:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Muli|Roboto|Playfair+Display:400,400i,700,700i&display=swap');
 
 
 
@@ -30,7 +30,7 @@
 
 body {
 	font-size: 19px;
-	font-family: 'Karla';
+	font-family: 'Muli';
 }
 
 a { /* links */
