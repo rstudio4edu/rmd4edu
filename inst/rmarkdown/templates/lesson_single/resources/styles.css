@@ -33,6 +33,14 @@ body {
 	font-family: 'Karla';
 }
 
+a { /* links */
+  color: #5ebccf;
+}
+
+a:hover {
+ color: #50a0b0; /* darker color when hovering */
+}
+
 
 /*----------------ADDING WHITE SPACE-------------*/
 
@@ -52,7 +60,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-/*------------Table of Contents----------- */
+/*------------Table of Contents (TOC)----------- */
 
 div.tocify {
     width: 100% !important;
@@ -62,7 +70,7 @@ div.tocify {
 }
 
 .tocify {
-  border: none;     /* Removes border */
+  border: none;   /*Removes border */
   border-radius: 0px; /* Gets rid of rounded corners on TOC */
 }
 
@@ -70,18 +78,34 @@ div.tocify {
     line-height: 25px;
 }
 
+.tocify ul {
+  border-right: solid 1px #eee; /* Thin right border on TOC list */
+}
+
+.list-group-item.active, .list-group-item.active:hover{ /* Active TOC links*/
+  color: #787878;
+  background-color: #ffffff;
+  border-color: #ccc;
+}
+
+.list-group-item:hover { /* Hovered TOC links*/
+  color: #787878;
+  background-color: #ffffff;
+  border: none;
+}
+
 
 
 /* ADD A LOGO. THREE OPTIONS */
 
-/* 1: For logo immediately above TOC, use style rule below, otherwise comment out*/
+/*1: For logo immediately above TOC, use style rule below, otherwise comment out*/
 
 #TOC::before {
   content: "";
   display: block;
   height: 200px;
-  margin: 20px 20px 20px 20px;
-  background-image: url("logo.png");
+  margin: 20px 20px 40px 20px;
+  background-image: url("logo-black.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -93,7 +117,7 @@ div.tocify {
 /*
 .upper-right-logo {
   margin-top: 20px;
-  background-image: url("logo.png");
+  background-image: url("logo-black.png");
   height: 150px;
   background-size: contain;
   background-position: right;
@@ -109,7 +133,7 @@ div.tocify {
   content: "";
   display: block;
   margin-top: 20px;
-  background-image: url("logo.png");
+  background-image: url("logo-black.png");
   height: 150px;
   background-size: contain;
   background-position: right;
