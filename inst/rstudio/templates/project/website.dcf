@@ -1,0 +1,17 @@
+Binding: new_project_create_website
+Title: rstudio4edu distill website
+OpenFiles: index.Rmd, about.Rmd, _site.yml
+
+Parameter: title
+Default: Desiree's website
+Widget: TextInput
+Label: Title
+Position: left
+
+Parameter: gh_pages
+Default: On
+Widget: CheckboxInput
+Label: Configure for GitHub Pages
+Position: right
+
+

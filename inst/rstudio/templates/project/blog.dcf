@@ -1,0 +1,17 @@
+Binding: new_project_create_blog
+Title: rstudio4edu blog
+OpenFiles: _posts/welcome/welcome.Rmd, index.Rmd, about.Rmd, _site.yml
+
+Parameter: title
+Default: Desiree's blog
+Widget: TextInput
+Label: Title
+Position: left
+
+Parameter: gh_pages
+Default: On
+Widget: CheckboxInput
+Label: Configure for GitHub Pages
+Position: right
+
+
