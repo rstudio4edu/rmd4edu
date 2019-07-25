@@ -1,5 +1,5 @@
 Binding: new_project_create_website
-Title: rstudio4edu distill website
+Title: rstudio4edu website using Distill
 OpenFiles: index.Rmd, about.Rmd, _site.yml
 
 Parameter: title

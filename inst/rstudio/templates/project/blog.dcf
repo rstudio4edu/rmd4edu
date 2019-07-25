@@ -1,5 +1,5 @@
 Binding: new_project_create_blog
-Title: rstudio4edu blog
+Title: rstudio4edu blog using Distill
 OpenFiles: _posts/welcome/welcome.Rmd, index.Rmd, about.Rmd, _site.yml
 
 Parameter: title
