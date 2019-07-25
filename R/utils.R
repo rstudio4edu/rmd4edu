@@ -1,3 +1,11 @@
+# from bookdown
+# changed bookdown to rmd4edu
+
+rmd4edu_file = function(...) {
+  system.file(..., package = 'rmd4edu', mustWork = TRUE)
+}
+
+
 # from distill
 
 # check for shiny classic
