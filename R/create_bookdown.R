@@ -1,12 +1,12 @@
-# from bookdown
+#' from bookdown
 
 new_project_create_book = function(path) {
 
   # ensure directory exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
 
-  # copy 'resources' folder to path
-  resources = rmd4edu_file('rstudio', 'templates', 'project', 'resources')
+  # copy 'book' folder to path
+  resources = rmd4edu_file('rstudio', 'templates', 'project', 'book')
 
   files = list.files(resources, recursive = TRUE, include.dirs = FALSE)
 
