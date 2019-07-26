@@ -12,16 +12,16 @@
 #' @note The `dir` and `title` parameters are required (they will be prompted for
 #'   interatively if they are not specified).
 #'
-#' @rdname create_website
-#' @export
+#' this is the wrapper for the exported function that is used by
+#' our RStudio project template
 new_project_create_website <- function(dir, ...) {
   params <- list(...)
   distill::create_website(dir, params$title, params$gh_pages, edit = FALSE)
 }
 
 
-#' @rdname create_website
-#' @export
+#' this is the wrapper for the exported function that is used by
+#' our RStudio project template
 new_project_create_blog <- function(dir, ...) {
   params <- list(...)
   distill::create_blog(dir, params$title, params$gh_pages, edit = FALSE)
