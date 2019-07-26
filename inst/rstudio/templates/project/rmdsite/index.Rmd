@@ -1,0 +1,103 @@
+---
+title: "rstudio4edu website"
+author: "Desirée De Leon"
+output:
+  html_document:
+    includes:
+      in_header: hero-image.html
+---
+
+Hello, educators!
+
+
+<br>
+
+
+
+# Welcome  
+
+This is the course website for YUM-101 Delicious Foods.   
+
+<br>
+
+
+# Course Overview  
+
+This 10-week course will give students a foundation in the principles and practice of delicious food appreciation. There will be a special focus on pizzas and pastries. Lectures will be weekly, and lab sections will occur every two weeks, providing students with the opportunity to apply lecture material and assigned readings with hands-on experiences.  
+
+<br>
+
+
+# Instructors  
+
+[**Marcella Hazan**](https://en.wikipedia.org/wiki/Marcella_Hazan)    
+[**Rodolphe Lindt**](https://en.wikipedia.org/wiki/Rodolphe_Lindt)  
+
+
+<br>
+
+
+# Logistics  
+
+**Lecture:** Wednesdays, 13:00-14:30  
+**Labs:** Fridays, biweekly, 13:00-14:30
+
+<br>
+
+
+# Schedule
+
+* Wed, Sep 25  Lecture 1
+
+* Wed, Oct 2  Lecture 2
+
+* Wed, Oct 9  Lecture 3
+
+* Wed, Oct 16  Lecture 4
+
+* Wed, Oct 23  Lecture 5
+
+* Wed, Oct 30  Lecture 6
+
+* Wed, Nov 6  Lecture 7
+
+* Wed, Nov 13  Lecture 8
+
+* Wed, Nov 20  Lecture 9
+
+* Wed, Nov 27 - No Class/ Thanksgiving Break  
+
+* Wed, Dec 4 - Final Exam  
+
+<br> 
+
+
+# Textbook and Assigned Readings
+
+The textbooks below are not required but will be referred to throughout the course. A copy of each text is being held on reserve at the university library for *hourly* rental. 
+
+[On Cooking](https://www.amazon.com/Cooking-Textbook-Culinary-Fundamentals-Hospitality-ebook/dp/B07R7D9H9K/ref=sr_1_fkmr0_1?keywords=On+Cooking%3A+A+Textbook+of+Culinary+Fundamentals+6th+Edition+PDF+%28ebook%29&qid=1561316536&s=gateway&sr=8-1-fkmr0) Authors: Alan M. Hause, Priscilla Martel, and Sarah R. Labensky  
+
+[On Baking](https://www.amazon.com/Baking-Update-Textbook-Pastry-Fundamentals-ebook/dp/B00XIH2H76/ref=pd_sim_351_1/130-8114075-5612107?_encoding=UTF8&pd_rd_i=B00XIH2H76&pd_rd_r=6df0b21e-95e9-11e9-80ed-5b1764340abc&pd_rd_w=QmJWd&pd_rd_wg=vbbD1&pf_rd_p=a098ee4c-2e0f-4821-b463-d4b049053104&pf_rd_r=VGZQ9X5C65MRBSXV4DRR&psc=1&refRID=VGZQ9X5C65MRBSXV4DRR) Authors: Eddy Van Damme, Priscilla Martel, and Sarah R. Labensky  
+
+When there are assigned articles or readings, these will be posted 2-3 days before the corresponding lecture under the Lectures tab of this course website.
+
+<br>
+
+
+# Credits
+
+Currently YUM-101 is assigned 3 credit hours.   
+
+
+<br>
+
+
+
+
+# General Resources
+
+* [For Breakfast](https://www.bonappetit.com/recipes/desserts/slideshow/breakfast-pastries)
+* [For Lunch](https://www.bonappetit.com/recipes/family-meals/slideshow/pizza-recipes)
+* [For Dinner](https://cooking.nytimes.com/68861692-nyt-cooking/807163-our-greatest-pizza-recipes)
+* [For Dessert](https://www.brit.co/dessert-pizza-recipes/)
