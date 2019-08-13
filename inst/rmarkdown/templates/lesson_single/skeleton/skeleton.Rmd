@@ -7,6 +7,18 @@ output:
     toc: true
 ---
 
+```{r logo, echo = FALSE}
+
+logo <- knitr::image_uri("logo-mark-rstudio4edu.png")
+
+htmltools::withTags(
+  style("#TOC::before {
+          background-image: url(",logo,");
+          margin-top: 50px;
+        }")
+)
+```
+
 # Hi!
 
 This is a single lesson template.
@@ -14,7 +26,8 @@ This is a single lesson template.
 # Make it your own
 
 * To edit the footer information, open up the file `footer.html`. 
-* To edit the logo, open up the file `styles.css`.
+
+* To edit the logo, change the path for `knitr::image_uri()` in the code chunk above to be the file path to your logo image.
 
 Check out our resource at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
 

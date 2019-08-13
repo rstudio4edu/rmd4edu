@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Muli|Roboto|Playfair+Display:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Muli:400,400i,700,700i|Roboto|Playfair+Display:400,400i,700,700i&display=swap');
 
 
 
@@ -105,7 +105,7 @@ div.tocify {
   display: block;
   height: 200px;
   margin: 20px 20px 40px 20px;
-  background-image: url("logo-black.png");
+  /*background-image: url("logo-black.png");*/
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -114,16 +114,16 @@ div.tocify {
 
 /* 2: For logo above title in upper righthand corner, inline with Title and Author, when also used with logo.HTML before_body. use style rule below. otherwise comment out*/
 
-/*
+
 .upper-right-logo {
   margin-top: 20px;
-  background-image: url("logo-black.png");
+  /*background-image: url("logo-black.png");*/
   height: 150px;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
 }
-*/
+
 
 
 /* 3: For logo to be in upper righthand corner, ABOVE title and author */
