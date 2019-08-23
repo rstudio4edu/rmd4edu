@@ -7,9 +7,9 @@ output:
     toc: true
 ---
 
-```{r logo, echo = FALSE}
+```{r logo, echo = FALSE, eval = FALSE}
 
-logo <- knitr::image_uri("logo-mark-rstudio4edu.png")
+logo <- knitr::image_uri("<your-logo.png>")
 
 htmltools::withTags(
   style("#TOC::before {
@@ -25,12 +25,33 @@ This is a single lesson template.
 
 # Make it your own
 
-* To edit the footer information, open up the file `footer.html`. 
+To add a logo, do two things:
 
-* To edit the logo, change the path for `knitr::image_uri()` in the code chunk above to be the file path to your logo image.
+1. Change the code chunk setting above from `eval = FALSE` to `eval = TRUE`.
+1. Add your logo file within `knitr::image_uri()`, where `<your-logo.png>` is the file path to your logo image.
 
-Check out our resource at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
+
+# Specially-styled questions
+
+To use specially-styled questions like the ones below, place `<div>` tags around them like so: 
+
+```
+<div> class="question">
+
+1. Your first question here.
+2. You second question here.
+
+</div>
+```
+
+<div class="question">
+1. Your first question here.
+
+2. You second question here.
+</div>
 
 # Goodbye!
+
+Check out our resource at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
 
 Be sure to remove this message!

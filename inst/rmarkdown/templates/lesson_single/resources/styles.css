@@ -1,102 +1,23 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Muli:400,400i,700,700i|Roboto|Playfair+Display:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
 
-
-
-.flat-table {
-  display: block;
-  font-family: sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 115%;
-  overflow: auto;
-  width: auto;
-}
-  th {
-    background-color: #75AADB;
-    color: white;
-    font-weight: normal;
-    padding: 20px 30px;
-    text-align: center;
-  }
-
-  td {
-    background-color: rgb(238, 238, 238);
-    font-color: #4D4D4D;
-    color: rgb(111, 111, 111);
-    padding: 20px 30px;
-  }
-
-/* Whole Document*/
+/*------------- Whole Document---------------- */
 
 body {
-	font-size: 19px;
 	font-family: 'Muli';
+	font-size: 19px;
 }
 
-a { /* links */
-  color: #5ebccf;
+/*----------------- links ---------------------*/
+
+a {
+  color: #4e89bf;
 }
 
 a:hover {
- color: #50a0b0; /* darker color when hovering */
+ color: #396892; /* darker color when hovering */
 }
 
-
-/*----------------ADDING WHITE SPACE-------------*/
-
-/* Between headers */
-h1, h2, h3, h4, h5 {
-  padding-top: 3em !important;
-  padding-bottom: 40px;
-  margin-top: -1em !important;
-}
-
-/* Between TOC and Righthand side content on large screens */
-
-@media (min-width: 992px) {
-  .col-md-9 {
-    width: 75%;
-    padding-left: 4em !important;
-  }
-}
-
-/*------------Table of Contents (TOC)----------- */
-
-div.tocify {
-    width: 100% !important;
-    max-width: 260px;
-    max-height: 85%;
-    font-size: 16px;
-}
-
-.tocify {
-  border: none;   /*Removes border */
-  border-radius: 0px; /* Gets rid of rounded corners on TOC */
-}
-
-.tocify ul, .tocify li { /* Increases spacing between TOC headers*/
-    line-height: 25px;
-}
-
-.tocify ul {
-  border-right: solid 1px #eee; /* Thin right border on TOC list */
-}
-
-.list-group-item.active, .list-group-item.active:hover{ /* Active TOC links*/
-  color: #787878;
-  background-color: #ffffff;
-  border-color: #ccc;
-}
-
-.list-group-item:hover { /* Hovered TOC links*/
-  color: #787878;
-  background-color: #ffffff;
-  border: none;
-}
-
-
-
-/* ADD A LOGO. THREE OPTIONS */
+/* --------LOGO, three options-------------*/
 
 /*1: For logo immediately above TOC, use style rule below, otherwise comment out*/
 
@@ -104,7 +25,7 @@ div.tocify {
   content: "";
   display: block;
   height: 200px;
-  margin: 20px 20px 40px 20px;
+  margin: 2.75em 20px 40px 20px;
   /*background-image: url("logo-black.png");*/
   background-size: contain;
   background-position: center center;
@@ -112,59 +33,177 @@ div.tocify {
 }
 
 
-/* 2: For logo above title in upper righthand corner, inline with Title and Author, when also used with logo.HTML before_body. use style rule below. otherwise comment out*/
+/* 2: For logo above title in upper righthand corner, inline with Title and Author, use style rule below. Otherwise comment out*/
 
-
-.upper-right-logo {
-  margin-top: 20px;
-  /*background-image: url("logo-black.png");*/
-  height: 150px;
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-
-
-/* 3: For logo to be in upper righthand corner, ABOVE title and author */
-/* not recommended if using TOC float */
 /*
 #header.fluid-row::before {
   content: "";
-  display: block;
+  height: 150px;
+  width: 150px;
+  float: right;
+  background-image: url("logo-black.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}*/
+
+
+/* option 3 for a logo -- above title and author, when also used with logo.HTML before_body. use style rule below. otherwise comment out*/
+
+/*
+.upper-right-logo {
   margin-top: 20px;
   background-image: url("logo-black.png");
   height: 150px;
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-}
-*/
+}*/
 
 
+/*----------------ADDING WHITE SPACE-------------*/
 
 
-/* Large image at the top */
-
-.big_image {
-  margin-top: -50px;
-  margin-bottom: 2em;
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
-.image-text{
-    position: absolute;
-    top:30%;
-    left:0;
-    right:0;
-    bottom:0;
+ .title {
+      margin-top: 2.75em !important;
+      margin-bottom: 0.75em;
   }
 
 
-/* FOOTER */
+.section h1 {
+      margin-top: 2.5em !important;
+      margin-bottom: 0.75em;
+}
+
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+  padding-top: 1.5em !important;
+  margin-bottom: 0.75em;
+}
+
+/* Space Between TOC and Righthand side content on large screens */
+
+@media (min-width: 992px) {
+  .col-md-9 {
+    width: 75%;
+    padding-left: 5em !important;
+  }
+}
+
+/* Remove excessive white space at the end of page */
 
 .tocify-extend-page {
-  height: 0px !important; /* Gets rid of empty space below footer*/
+  height: 0px !important;
+}
+
+
+/*------------Table of Contents (TOC)----------- */
+
+.tocify {
+      border: none;   /*Removes border */
+      border-radius: 0px; /* Gets rid of rounded corners on TOC */
+      font-size: 16px;
+    }
+
+.tocify ul, .tocify li { /* Increases spacing between TOC headers*/
+        line-height: 25px !important;
+    }
+
+.tocify ul {
+  border-right: solid 1px #eee; /* Thin right border on TOC list */
+}
+
+/* Active TOC links*/
+
+  .list-group-item.active,
+  .list-group-item.active:hover{
+    color: #787878;
+    background-color: #ffffff;
+    border-color: #ccc;
+  }
+
+/* Hovered TOC links*/
+
+.list-group-item:hover {
+  color: #787878;
+  background-color: #ffffff;
+  border: none;
+}
+
+
+
+/* -----------Question counter ---------*/
+
+    body {
+      counter-reset: li;
+    }
+
+    .question ol {
+	    /* Remove the default left padding */
+	    padding-left: 0;
+    }
+
+    .question ol>li {
+    	/* Create a positioning context */
+	    position: relative;
+	    /* Disable the normal item numbering */
+	    list-style: none;
+	    width: 90%;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding-right: 0;
+	    padding-left: 120px;
+    }
+
+    .question ol>li:before,
+    .question ol>p>li:before{
+    	/* Use the counter as content */
+	    content: "Question " counter(li) ": ";
+	    /* Increment the counter by 1 */
+	    counter-increment: li;
+	    position: absolute;
+	    color: #5ebccf;
+	    left: -0.5px;
+	    font-weight: bold;
+    }
+
+    .question ol ol {
+      counter-reset: subitem;
+    }
+
+
+/*-------------FOOTER-------------- */
+
+.footer {
+  font-size: .6em;
+  text-transform: uppercase;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+
+/* Divider line above footer */
+.footer hr{
+  margin-top: 7em;
+  width: 100%;
+}
+
+/* rstudio4edu text link */
+.rstudio4edu {
+  color: #3fb5bd;
+  font-family: "Lora";
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer.logo {
+  width: 40px;
+  margin-right: 4px;
 }

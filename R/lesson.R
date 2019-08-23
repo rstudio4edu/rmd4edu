@@ -15,9 +15,7 @@ lesson_single = function(toc = TRUE, ...) {
 
   template = pkg_resource("rmarkdown/templates/lesson_single/resources/template.html")
   css = pkg_resource("rmarkdown/templates/lesson_single/resources/styles.css")
-  big_image = pkg_resource("rmarkdown/templates/lesson_single/resources/big_image.html")
   footer = pkg_resource("rmarkdown/templates/lesson_single/resources/footer.html")
-
 
   # call the base html_document function
   rmarkdown::html_document(
@@ -25,12 +23,13 @@ lesson_single = function(toc = TRUE, ...) {
     toc_float = TRUE,
     fig_width = 6.5,
     fig_height = 4,
+    theme = "flatly",
     highlight = "tango",
     code_folding = "show",
     code_download = TRUE,
-    number_sections = TRUE,
+    number_sections = FALSE,
     css = css,
-    includes = rmarkdown::includes(in_header= big_image, after_body = footer),
+    includes = rmarkdown::includes(after_body = footer),
     ...
   )
 }
