@@ -1,0 +1,14 @@
+--- 
+title: "rstudio4edu"
+author: "Desirée De Leon"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a rstudio4edu book"
+---
+
+# Welcome!
+

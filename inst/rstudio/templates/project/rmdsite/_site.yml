@@ -1,0 +1,16 @@
+name: "rstudio4edu website"
+navbar:
+  title: "rstudio4edu website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Schedule"
+      href: about.html
+output:
+  html_document:
+    css: style.css
+    theme: yeti
+    highlight: zenburn
+    toc: true
+    toc_float: true
+    code_download: true

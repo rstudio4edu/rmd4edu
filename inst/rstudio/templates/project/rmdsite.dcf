@@ -1,0 +1,11 @@
+Title: rstudio4edu website using R Markdown
+Binding: new_project_create_rmdsite
+Subtitle: Create a simple rstudio4edu website using R Markdown
+Caption: Create a simple rstudio4edu website using R Markdown
+OpenFiles: _site.yml, *.Rmd
+
+Parameter: gh_pages
+Default: On
+Widget: CheckboxInput
+Label: Configure for GitHub Pages
+Position: right
