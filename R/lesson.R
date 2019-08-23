@@ -13,7 +13,8 @@ lesson_single = function(toc = TRUE, ...) {
     system.file(..., package = "rmd4edu")
   }
 
-  css    = pkg_resource("rmarkdown/templates/lesson_single/resources/styles.css")
+  template = pkg_resource("rmarkdown/templates/lesson_single/resources/template.html")
+  css = pkg_resource("rmarkdown/templates/lesson_single/resources/styles.css")
   footer = pkg_resource("rmarkdown/templates/lesson_single/resources/footer.html")
 
   # call the base html_document function
@@ -23,10 +24,11 @@ lesson_single = function(toc = TRUE, ...) {
     fig_width = 6.5,
     fig_height = 4,
     theme = "flatly",
+    highlight = "tango",
     code_folding = "show",
     code_download = TRUE,
+    number_sections = FALSE,
     css = css,
-    number_sections = TRUE,
     includes = rmarkdown::includes(after_body = footer),
     ...
   )

@@ -1,0 +1,4 @@
+Title: rstudio4edu book using bookdown
+Binding: new_project_create_book
+OpenFiles: README.md, _bookdown.yml, _output.yml, index.Rmd
+Icon: book.png
