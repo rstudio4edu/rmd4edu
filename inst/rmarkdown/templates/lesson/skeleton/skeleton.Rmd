@@ -25,26 +25,29 @@ This is an R Markdown template for creating a single `rstudio4edu` lesson, inten
 To add a logo, do one of two things:
 
 1. Copy your logo image file to the root directory (or a subfolder, if you prefer) and name it `my-logo.png`. 
-  + If you want to name it something else, like `my-college-logo.png`, edit the first code chunk above named `logo`. Where you see `knitr::image_uri()`, change `"my-logo.png"` to the file path to your logo image. 
-  + If you want to put your logo in a subfolder, append the file path (relative to where this `.Rmd` file lives) to your image name.
+    + If you want to name it something else, like `my-college-logo.png`, edit the first code chunk above named `logo`. Where you see `knitr::image_uri()`, change `"my-logo.png"` to the file path to your logo image. 
+    + If you want to put your logo in a subfolder, append the file path (relative to where this `.Rmd` file lives) to your image name.
 
 1. If you don't have your own logo, you can use our `rstudio4edu` logo by changing `"my-logo.png"` to `"rstudio4edu-logo.png"`. Here is what it looks like:
 
-```{r echo=FALSE}
-knitr::include_graphics("rstudio4edu-logo.png")
-```
+    ```{r echo=FALSE}
+    knitr::include_graphics("rstudio4edu-logo.png")
+    ```
 
-  Pretty, right? We like it. Feel free to use it.
+    Pretty, right? We like it. Feel free to use it.
 
 # Adding questions
 
 To use specially-styled questions like the ones below, place `<div>` tags around them like so: 
 
 ```
-<div> class="question">
+<div class="question">
 
 1. Your first question here.
-1. You second question here.
+
+You can add text here too.
+
+1. Your second question here.
 
 </div>
 ```
@@ -52,11 +55,13 @@ To use specially-styled questions like the ones below, place `<div>` tags around
 <div class="question">
 1. Your first question here.
 
-1. You second question here.
+You can add text here too.
+
+1. Your second question here.
 </div>
 
 # Goodbye!
 
-Check out our resource at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
+Check out our online book at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
 
 Don't forget to delete all this text before you release your lesson out into the wild - happy educating!
