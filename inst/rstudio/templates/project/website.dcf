@@ -1,6 +1,7 @@
 Binding: new_project_create_website
 Title: rstudio4edu website using Distill
 OpenFiles: index.Rmd, about.Rmd, _site.yml
+Icon: rstudio4edu.png
 
 Parameter: title
 Default: Desiree's website
