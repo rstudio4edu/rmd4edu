@@ -2,10 +2,12 @@
 % Please edit documentation in R/create_bookdown.R
 \name{new_project_create_book}
 \alias{new_project_create_book}
-\title{from bookdown}
+\title{this is the wrapper for the exported function that is used by
+our RStudio project template}
 \usage{
-new_project_create_book(path)
+new_project_create_book(dir, ...)
 }
 \description{
-from bookdown
+this is the wrapper for the exported function that is used by
+our RStudio project template
 }
