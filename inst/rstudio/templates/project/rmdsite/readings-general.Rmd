@@ -1,0 +1,11 @@
+---
+title: "General Resources"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+General resources relevant for the course are included here. 
+
+

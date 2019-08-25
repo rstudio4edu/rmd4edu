@@ -1,0 +1,60 @@
+---
+title: "Schedule"
+output:
+  html_document:
+    toc: false
+---
+
+Here's the plan for the semester:
+\
+
+```{r, include = FALSE}
+library(kableExtra)
+library(tidyverse)
+library(DT)
+```
+
+
+```{r, echo = FALSE}
+schedule <- tribble(~Module, ~Weekday, ~Date, ~Topic, ~Slides, ~slides_url, ~Labs, ~labs_url,
+                    0, "Tues", "Sep 3", "Welcome", "Slides", "01-slides-welcome.html", "", "",
+                    1 ,"Thurs", "Sep 5", "Data Viz I", "Slides", "02-slides-data-viz-I.html", "", "",
+                    1, "Tues", "Sep 10", "Data Viz II", "Slides", "03-slides-topic.html", "", "",
+                    1,"Thurs", "Sep 12", "Topic 3", "Slides", "03-slides-topic.html", "Lab 1", "lab1.html",
+                    1,"Tues", "Sep 17", "Topic 4", "Slides", "03-slides-topic.html", "", "",
+                    1,"Thurs", "Sep 19", "Topic 5", "Slides", "03-slides-topic.html", "", "",
+                    2, "Tues", "Sep 24", "Topic 6", "Slides", "03-slides-topic.html", "", "",
+                    2,"Thurs", "Sep 26", "Topic 7", "Slides", "03-slides-topic.html", "Lab 2", "lab2.html",
+                    2,"Tues", "Oct 1", "Topic 8", "Slides", "03-slides-topic.html", "", "",
+                    2,"Thurs", "Oct 3", "Topic 9", "Slides", "03-slides-topic.html","", "",
+                    2,"Tues", "Oct 8", "Topic 10", "Slides", "03-slides-topic.html","", "",
+                    3,"Thurs", "Oct 10", "Topic 11", "Slides","03-slides-topic.html", "Lab 3", "lab3.html",
+                    3,"Tues", "Oct 15", "Topic 12", "Slides", "03-slides-topic.html","", "",
+                    3,"Thurs", "Oct 17", "Topic 13", "Slides", "03-slides-topic.html","", "",
+                    3,"Tues", "Oct 22", "Topic 14", "Slides", "03-slides-topic.html","", "",
+                    3,"Thurs", "Oct 24", "Topic 15", "Slides", "03-slides-topic.html","Lab 4", "lab4.html",
+                    4,"Tues", "Oct 29", "Topic 16", "Slides", "03-slides-topic.html","", "",
+                    4,"Thurs", "Oct 31", "Topic 17", "Slides", "03-slides-topic.html","", "",
+                    4,"Tues", "Nov 5", "Topic 18", "Slides", "03-slides-topic.html","", "",
+                    4,"Thurs", "Nov 7", "Topic 19", "Slides", "03-slides-topic.html","Lab 5", "lab5.html",
+                    4, "Tues", "Nov 12", "Topic 20", "Slides", "03-slides-topic.html","", "",
+                    5, "Tues", "Nov 19", "Topic 21", "Slides", "03-slides-topic.html","", "",
+                    5,"Thurs", "Nov 26", "Topic 22", "Slides", "03-slides-topic.html","", "",
+                    5,"Tues", "Nov 28", "Thanksgiving - No Class", "", "","", "",
+                    5,"Thurs", "Dec 3", "Topic 23", "Slides", "03-slides-topic.html","Lab 6", "lab6.html",
+                    5,"Tues", "Dec 5", "Topic 24", "Slides", "03-slides-topic.html","", "",
+                    5,"Thurs", "Dec 10", "Review", "", "","", "",
+                    5,"Tues", "Dec 12", "Final Exam", "", "","", "",
+                 )
+             
+ schedule %>% 
+  mutate(
+    Labs = cell_spec(Labs, "html", link = labs_url),
+    Slides = cell_spec(Slides, "html", link = slides_url)) %>%
+  dplyr::select(-ends_with("_url")) %>%
+    datatable(escape = FALSE) 
+
+ 
+
+```
+

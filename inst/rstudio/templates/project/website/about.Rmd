@@ -1,0 +1,70 @@
+---
+title: "Lectures"
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    toc: true
+---
+```{r layout = "l-screen", out.extra="class=external"}
+knitr::include_graphics("images/curves.jpg")
+```
+ 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+On this page you'll find lecture materials and assignments posted weekly. 
+
+# Lecture 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit turpis cursus in hac habitasse. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pretium viverra suspendisse potenti nullam.
+
+<aside>
+
+```{r, eval = TRUE, echo = FALSE}
+library(tidyverse)
+library(gapminder)
+ 
+p <- gapminder %>%
+  filter(year==1977) %>%
+  ggplot( aes(x = gdpPercap, y = lifeExp, size = pop, color=continent)) +
+  geom_point() +
+  scale_x_log10() +
+  theme_bw()
+
+p
+
+```
+
+</aside>
+
+Orci ac auctor augue mauris. Sagittis orci a scelerisque purus. Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Dapibus ultrices in iaculis nunc sed augue lacus. Sodales ut etiam sit amet nisl purus. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. A cras semper auctor neque vitae. Aenean sed adipiscing diam donec. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. 
+
+# Assignments
+ 
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit turpis cursus in hac habitasse. Fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pretium viverra suspendisse potenti nullam.
+ 
+ 
+ ```{r gdpplot, eval = TRUE, echo = FALSE, fig.cap = "Reference for Assignment 1"}
+library(tidyverse)
+library(gapminder)
+ 
+p <- gapminder %>%
+  filter(year==1977) %>%
+  ggplot( aes(x = gdpPercap, y = lifeExp, size = pop, color=continent)) +
+  geom_point() +
+  scale_x_log10() +
+  theme_bw()
+
+p
+```
+
+Answer the questions below, using the information from Figure \@ref(fig:gdpplot).
+ 
+ 1. Suspendisse sed nisi lacus sed viverra tellus. Faucibus pulvinar elementum integer enim neque volutpat ac. Magna ac placerat vestibulum lectus mauris ultrices eros?
+ 
+ 2. Purus ut faucibus pulvinar elementum integer enim neque volutpat. Duis convallis convallis tellus id interdum velit?
+ 
+ 
+ 
+

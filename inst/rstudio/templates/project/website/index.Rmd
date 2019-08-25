@@ -1,0 +1,93 @@
+---
+title: "Demo Website"
+description: |
+  Welcome to my Distill course page. Here you can find all course logistics and content.
+author:
+  - name: Desirée De Leon
+    url: https://desiree.rbind.io
+    affiliation: RStudio
+    affiliation_url: https://rstudio.com
+  - name: Alison Hill
+    url: https://alison.rbind.io
+    affiliation: RStudio
+    affiliation_url: https://rstudio.com
+bibliography: refs.bib
+date: "`r Sys.Date()`"
+site: 
+  distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+# Welcome  
+
+This is the course website for DATA-101 Introductory Data Analysis.   
+
+\
+
+# Course Overview  
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum[@loremipsum].
+
+<aside>
+Here is a small side note.
+</aside>
+
+\
+
+
+# Logistics  
+
+**Lecture:** Wednesdays, 13:00-14:30  
+**Labs:** Fridays, biweekly, 13:00-14:30
+
+\
+
+
+# Schedule
+
+* Wed, Sep 25  Lecture 1
+* Wed, Oct 2  Lecture 2
+* Wed, Oct 9  Lecture 3
+* Wed, Oct 16  Lecture 4
+* Wed, Oct 23  Lecture 5
+* Wed, Oct 30  Lecture 6
+* Wed, Nov 6  Lecture 7
+* Wed, Nov 13  Lecture 8
+* Wed, Nov 20  Lecture 9
+* Wed, Nov 27 - No Class/ Thanksgiving Break  
+* Wed, Dec 4 - Final Exam  
+
+\
+
+
+# Textbook and Assigned Readings
+
+The textbook below [@r4ds] is not required but will be referred to throughout the course. It is available online and for free. A hardcopy of the text is on reserve at the university library. 
+
+[R for Data Science](https://r4ds.had.co.nz/)
+
+When there are assigned articles or readings, these will be posted 2-3 days before the corresponding lecture under the Lectures tab of this course website.
+
+<aside>![R4DS](http://alturl.com/bmfvq){width=50%}</aside>
+
+
+\
+
+
+# Credits
+
+This course is assigned 3 credit hours^[A footnote goes here!].   
+
+
+# Acknowledgments {.appendix}
+
+We'd like to thank the following funding sources for making this work possible: 
+Source 1, Source 2, and Source 3. 
+

@@ -1,0 +1,10 @@
+Title: rstudio4edu book using bookdown
+Binding: new_project_create_book
+OpenFiles: README.md, _bookdown.yml, _output.yml, index.Rmd
+Icon: rstudio4edu.png
+
+Parameter: gh_pages
+Default: On
+Widget: CheckboxInput
+Label: Configure for GitHub Pages
+Position: right

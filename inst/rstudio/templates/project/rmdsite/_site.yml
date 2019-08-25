@@ -1,0 +1,42 @@
+name: "Demo Course Site"
+output_dir: "docs"
+navbar:
+  title: "Demo Data Science Course"
+  left:
+    - text: "Syllabus"
+      href: index.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Readings"
+      menu:
+      - text: "Readings"
+      - text: "Module 1"
+        href: readings-module1.html
+      - text: "Module 2"
+        href: readings-module2.html
+      - text: "Module 3"
+        href: readings-module3.html
+      - text: "Module 4"
+        href: readings-module4.html
+      - text: "Module 5"
+        href: readings-module5.html
+      - text: "---"
+      - text: "General Resources"
+      - text: "Additional Readings"
+        href: readings-general.html
+  right:
+    - icon: "fa-github"
+      href: https://github.com/rstudio4edu/rmd-course-fancy
+    - icon: "fa-slack"
+      href: https://slack.com/
+    - icon: "fa-cloud"
+      href: https://rstudio.cloud/
+output:
+  html_document:
+    theme: yeti
+    toc: true
+    toc_float: true
+    includes:
+      after_body: assets/footer.html
+    css: assets/style.css
+    

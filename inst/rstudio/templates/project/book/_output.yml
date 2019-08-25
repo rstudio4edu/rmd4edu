@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  includes:
+    in_header: assets/header.html
+    before_body: assets/hero-image.html
+  highlight: tango
+  css: "./assets/style.css"
+  config:
+    toc:
+      before: |
+        <li class="toc-logo"><a href="./"><img src="images/logo-black.png"></a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit:
+      link: https://github.com/dcossyleon/fake_book/edit/master/%s
+      text: "Suggest an edit"
+    sharing:
+      github: yes
+      facebook: no
+      twitter: yes
+      all: no
