@@ -1,0 +1,33 @@
+---
+title: "Lab 3"
+subtitle: "Demo Course"
+author: "Your Name"
+output:
+  html_document:
+    code_folding: hide
+    code_download: TRUE
+    number_sections: TRUE
+---
+
+![](images/genius.png){width=15%}
+
+Your genius lab goes here!
+
+# Specially-styled questions
+
+To use specially-styled questions like the ones below, place `<div>` tags around them like so: 
+
+```
+<div> class="question">
+
+1. Your first question here.
+2. You second question here.
+
+</div>
+```
+
+<div class="question">
+1. Your first question here.
+
+2. You second question here.
+</div>

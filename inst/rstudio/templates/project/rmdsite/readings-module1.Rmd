@@ -1,0 +1,21 @@
+---
+title: "Module 1 Readings"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Module 1 focuses on data visualization. What patterns do we see in the data? How can we communicate these insights easily to others? These are the questions that we will explore during the first module this semester. 
+
+
+# Readings
+The resources below are the weekly readings assigned for Module 1. These will be updated weekly as we progress through the semester. 
+Readings reinforce the content that we cover in class and suggested homework problems will often come directly from this content. 
+
+### Week 1: Sep 3, 5
+ * [Healy: Chapter 1](https://socviz.co/lookatdata.html#lookatdata)
+
+### Week 2: Sep 10, 12
+* [Healy: Chapter 2](https://socviz.co/gettingstarted.html#gettingstarted)

@@ -2,7 +2,8 @@ Title: rstudio4edu website using R Markdown
 Binding: new_project_create_rmdsite
 Subtitle: Create a simple rstudio4edu website using R Markdown
 Caption: Create a simple rstudio4edu website using R Markdown
-OpenFiles: _site.yml, *.Rmd
+OpenFiles: _site.yml, index.Rmd
+Icon: rstudio4edu.png
 
 Parameter: gh_pages
 Default: On

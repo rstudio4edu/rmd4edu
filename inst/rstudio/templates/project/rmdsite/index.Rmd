@@ -1,103 +1,87 @@
 ---
-title: "rstudio4edu website"
-author: "Desirée De Leon"
+title: "DATA-101: Intro to Data Science"
 output:
   html_document:
     includes:
-      in_header: hero-image.html
+      in_header: assets/hero-image.html
 ---
 
-Hello, educators!
+## Welcome  
+
+This is the course website for DATA-101: Intro to Data Science. All of our course content will be made accessible to you here, including the course schedule, slides and reading materials, and lab content.
 
 
-<br>
+## Logistics  
+  Tuesdays and Thursdays  
+  Sep 6 – Dec 13, 2019  
+  13:00–14:30 PM  
+  Rm 111, Building  
+  
+
+## Teaching Team
+### Instructor
+  **Dr. Name Here**  
+  Office  
+  youremail@email.edu  
+  Office hours: Insert Here  
+  
+### TAs
+  **Grad Student 1**   
+  student@email.edu  
+
+  **Grad Student 2**   
+  student@email.edu  
 
 
+## Course Overview  
 
-# Welcome  
+This semester-long course aims to give you a foundation in the principles and practice of data science. The course goal is to teach you how to work with data--how to explore it, clean it, visualize it, and analyze it. Importantly, you'll learn how to do each of things in a way that will be easily shareable and reproducible. 
 
-This is the course website for YUM-101 Delicious Foods.   
+## Approach
 
-<br>
+The structure of most classes will consist of an introduction to new content in a lecture-like format, interspersed with in-class exercises where we practice applying the new content together. Readings are assigned weekly and are designed to reinforce the content covered that week in lecture. Homework questions covering the day's content will be posted at the end of each lecture. These questions will not be graded, but you are strongly encouraged to complete them so that you have an opportunity to keep your coding gears well-greased in between classes. Unannounced in-class quizzes will occur throughout the semester to assess your knowledge of the course material as we go. The exercises come from the lecture content, readings, and homework questions.  
 
-
-# Course Overview  
-
-This 10-week course will give students a foundation in the principles and practice of delicious food appreciation. There will be a special focus on pizzas and pastries. Lectures will be weekly, and lab sections will occur every two weeks, providing students with the opportunity to apply lecture material and assigned readings with hands-on experiences.  
-
-<br>
+Throughout the course there will also be several classes used for labs. These will be completed in assigned groups, and are intended to be larger-scale opportunties to work with data in a project setting. Lab content will be introduced at the start of class and the rest of the time will be used for working in groups. 
 
 
-# Instructors  
+## Tools and Equipment
+You will need a laptop to complete all in-class exercises and labs.
 
-[**Marcella Hazan**](https://en.wikipedia.org/wiki/Marcella_Hazan)    
-[**Rodolphe Lindt**](https://en.wikipedia.org/wiki/Rodolphe_Lindt)  
+Throughout this course we will be using R and RStudio. You have access to both of these for free. R is the programming language, and RStudio is the software that let's you interface with R easily. You can install R and RStudio on your local computer, but you can also access RStudio from the cloud, using the (also free) RStudio.cloud service. 
 
+## Textbook and Readings
+All textbooks are freely available online. Readings for each module will be posted on under the *Readings* tab of this site and will be updated regularly. 
 
-<br>
+ * [R for Data Science](https://r4ds.had.co.nz/)
+ * [Data Visualization: A Practical Introduction](http://socviz.co/)
 
+## Grading 
+Your course grade will be based on a final exam (40%), lab grades (30%), unannounced quizzes (20%), and class participation (10%).
 
-# Logistics  
+## Policies
 
-**Lecture:** Wednesdays, 13:00-14:30  
-**Labs:** Fridays, biweekly, 13:00-14:30
+### Missed or late work
+If you have extenuating circumstances that will cause you to miss class or a deadline, then please let me know, and I will do my best to accomodate you. In general, absences or late work *without* making arrangements with me in advance will *not* be accepted.
 
-<br>
+### Academic Integrity
+Sharing, collaborating, and making good use of online resources is an important part of learning in the data science community. Doing so is strongly encouraged in this class. However, all resources you modify or recycle must be clearly given credit, and work that is intended to be completed independently either by you or by your lab group, must be done so honestly.
 
+Participating in this course means that you are learning along with a community. Any form of plagiarism, cheating, or lying is a breach of community trust and will not be tolerated. Academic dishonesty of this kind will result in receiving no-credit for the related work and may result in additional penalties at the course and insitution level.
 
-# Schedule
+### Code of Conduct
+We will follow a code of conduct that is supportive and welcoming of all people, regardless of background or identity. In order to create an environment that is encourages learning and open discussion, we will follow the same conduct guidelines as [The Carpentries](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html) for all course-related events and activities:
 
-* Wed, Sep 25  Lecture 1
-
-* Wed, Oct 2  Lecture 2
-
-* Wed, Oct 9  Lecture 3
-
-* Wed, Oct 16  Lecture 4
-
-* Wed, Oct 23  Lecture 5
-
-* Wed, Oct 30  Lecture 6
-
-* Wed, Nov 6  Lecture 7
-
-* Wed, Nov 13  Lecture 8
-
-* Wed, Nov 20  Lecture 9
-
-* Wed, Nov 27 - No Class/ Thanksgiving Break  
-
-* Wed, Dec 4 - Final Exam  
-
-<br> 
+>
+* Use welcoming and inclusive language
+* Be respectful of different viewpoints and experiences
+* Gracefully accept constructive criticism
+* Focus on what is best for the community
+* Show courtesy and respect towards other community members
+Use welcoming and inclusive language
 
 
-# Textbook and Assigned Readings
+If you believe someone is violating the Code of Conduct, we ask that you report it to the instructor, TA, or other university official.
 
-The textbooks below are not required but will be referred to throughout the course. A copy of each text is being held on reserve at the university library for *hourly* rental. 
+\
 
-[On Cooking](https://www.amazon.com/Cooking-Textbook-Culinary-Fundamentals-Hospitality-ebook/dp/B07R7D9H9K/ref=sr_1_fkmr0_1?keywords=On+Cooking%3A+A+Textbook+of+Culinary+Fundamentals+6th+Edition+PDF+%28ebook%29&qid=1561316536&s=gateway&sr=8-1-fkmr0) Authors: Alan M. Hause, Priscilla Martel, and Sarah R. Labensky  
-
-[On Baking](https://www.amazon.com/Baking-Update-Textbook-Pastry-Fundamentals-ebook/dp/B00XIH2H76/ref=pd_sim_351_1/130-8114075-5612107?_encoding=UTF8&pd_rd_i=B00XIH2H76&pd_rd_r=6df0b21e-95e9-11e9-80ed-5b1764340abc&pd_rd_w=QmJWd&pd_rd_wg=vbbD1&pf_rd_p=a098ee4c-2e0f-4821-b463-d4b049053104&pf_rd_r=VGZQ9X5C65MRBSXV4DRR&psc=1&refRID=VGZQ9X5C65MRBSXV4DRR) Authors: Eddy Van Damme, Priscilla Martel, and Sarah R. Labensky  
-
-When there are assigned articles or readings, these will be posted 2-3 days before the corresponding lecture under the Lectures tab of this course website.
-
-<br>
-
-
-# Credits
-
-Currently YUM-101 is assigned 3 credit hours.   
-
-
-<br>
-
-
-
-
-# General Resources
-
-* [For Breakfast](https://www.bonappetit.com/recipes/desserts/slideshow/breakfast-pastries)
-* [For Lunch](https://www.bonappetit.com/recipes/family-meals/slideshow/pizza-recipes)
-* [For Dinner](https://cooking.nytimes.com/68861692-nyt-cooking/807163-our-greatest-pizza-recipes)
-* [For Dessert](https://www.brit.co/dessert-pizza-recipes/)
+[![cc-by-nc](images/by-nc.png){width=15%}](http://www.host.com/link.html)

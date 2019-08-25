@@ -1,0 +1,9 @@
+---
+title: "Data Viz I"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+fake slide placeholder

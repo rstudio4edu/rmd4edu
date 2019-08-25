@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+
+/*------------- Whole Document---------------- */
+
+body {
+	font-family: 'Muli';
+	font-size: 19px;
+}
+
+
+/* links */
+a { 
+  color: #5ebccf;
+}
+
+a:hover {
+ color: #50a0b0; /* darker color when hovering */
+}
+
+
+/*----------------ADDING WHITE SPACE-------------*/
+
+.title {
+  margin-top: 2em !important;
+  margin-bottom: 0.75em;
+}
+
+.section h1,
+.section h2, 
+.section h3, 
+.section h4, 
+.section h5 { 
+  padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  margin-bottom: 0.75em;
+}
+
+
+/* Space Between TOC and Righthand side content on large screens */
+
+@media (min-width: 992px) {
+  .col-md-9 {
+    width: 75%;
+    padding-left: 5em !important;
+  }
+}
+
+/*---------------Add a LOGO, three options ---------*
+
+/*1: For logo immediately above TOC, use style rule below, otherwise comment out*/
+
+    #TOC::before {
+      content: "";
+      display: block;
+      height: 200px;
+      margin: 2em 20px 40px 20px;
+      background-image: url("../images/logo-black.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+    
+/* 2: For logo above title in upper righthand corner, inline with Title and Author, use style rule below. Otherwise comment out*/
+
+/*
+     #header.fluid-row::before {
+      content: "";
+      height: 150px;
+      width: 150px;
+      float: right;
+      background-image: url("logo-black.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+*/
+
+/* option 3 for a logo -- above title and author, when also used with HTML file and before_body. use style rule below. otherwise comment out*/
+
+/*
+.upper-right-logo {
+  margin-top: 20px;
+  background-image: url("logo-black.png");
+  height: 150px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}*/
+
+
+/* -----------HERO IMAGE AT TOP OF PAGE -----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.hero-image {
+    position: relative;
+    /* liner gradient tints the image darker for readability*/
+    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(../images/hero.jpg); 
+    height: 400px;
+    background-size: cover;
+    background-color: #141c25f2;
+    background-position: center center;
+    display: flex; /* Change to `display: none` for no hero image */
+    justify-content: center;
+    align-items: center;
+}
+
+.top-text {
+  position: relative;
+  font-size: 34px;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  display: block; /* Change to `display: none` for no top text */
+  color: #ffffff73;
+}
+
+.bottom-text {
+  position: relative;
+  letter-spacing: 0.065em;
+  line-height: 1em;
+  font-size: 68px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block; /* Change to `display: none` for no bottom text */
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}  
+
+/*-----------------TOC----------------*/
+
+/* Makes TOC sticky (needed if you used a hero image) */
+
+.row-fluid{
+  display: flex; /* Necessary for sticky TOC*/
+
+}
+
+.tocify {
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 120px; /*Controls where TOC stops when sticky */
+  width: 100% !important;
+  border: none;
+}
+
+
+/* Tweak for mobile */
+@media screen and (max-width: 767px){
+
+  .col-xs-12.col-sm-4.col-md-3 {
+    display: none;
+  }
+  
+  .top-text {
+    font-size: 25px;
+  }
+
+  .bottom-text {
+    font-size: 40px;
+  }
+  
+}
+
+/* TOC links */
+
+.list-group-item {
+    color: #7b8a8b;
+    font-size: 16px;
+}
+
+.list-group-item.active {
+    color: #2c3e50;
+    background-color: white;
+    border: none;
+}
+
+.list-group-item:hover, 
+.list-group-item.active:hover {
+    color: #131b23;
+    background-color: white;
+}
+
+
+/*----------------NAVBAR ---------------*/
+.navbar-default {
+    background-color: #141c25f2;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.active>a, 
+a.dropdown-toggle:hover {
+  background-color: #141c25 !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  background-color: #141c25;
+}
+
+/* Dropdown menu hover color */
+  .navbar-default .dropdown-menu>li>a:hover {
+    background-color: #202831f2;
+  }
+
+/* Navbar Links when hovered*/
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav:hover, 
+.navbar-default .navbar-nav>li>a:hover, 
+a.navbar-brand:hover {
+  color: #ffffffab !important;
+  background-color: #141c25;
+}
+
+
+  /* -----------Question counter ---------*/
+
+  body {
+    counter-reset: li;
+  }
+
+  .question ol {
+    /* Remove the default left padding */
+    padding-left: 0;
+  }
+
+  .question ol>li {
+  	/* Create a positioning context */
+    position: relative;
+    /* Disable the normal item numbering */
+    list-style: none;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-left: 120px;
+  }
+
+  .question ol>li:before,
+  .question ol>p>li:before{
+  	/* Use the counter as content */
+    content: "Question " counter(li) ": ";
+    /* Increment the counter by 1 */
+    counter-increment: li;
+    position: absolute;
+    color: #3d85bb;
+    left: -0.5px;
+    font-weight: bold;
+  }
+
+  .question ol ol {
+    counter-reset: subitem;
+  }
+
+
+/* Divider line above footer */
+.footer hr{
+  width: 100%;
+}
+
+.footer {
+  font-size: 16px;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+
+.footer.logo {
+  width: 25px;
+  margin: 0px !important;
+}
+
+.rstudio4edu-footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tocify-extend-page {
+  height: 0px !important; /* Gets rid of extra space after footer*/
+}

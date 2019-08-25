@@ -1,0 +1,15 @@
+---
+title: "Module 3 Readings"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Module 3
+
+Your awesome description goes here
+
+# Readings
+
+Your awesome list of readings and resources goes here

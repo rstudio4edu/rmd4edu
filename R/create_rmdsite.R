@@ -24,7 +24,7 @@ do_create_rmdsite <- function(dir, title, gh_pages, edit, type) {
   # copy 'rmdsite' folder to dir
   file.copy(
     list.files(rmd4edu_file('rstudio', 'templates', 'project', 'rmdsite'), full.names = TRUE),
-    dir, overwrite = TRUE
+    dir, recursive = TRUE, overwrite = TRUE
   )
 
   # if this is for gh-pages then create .nojekyll

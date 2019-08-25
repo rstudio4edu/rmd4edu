@@ -1,0 +1,42 @@
+---
+title: "Lab 6"
+subtitle: "Demo Course"
+author: "Your Name"
+output:
+  html_document:
+    code_folding: hide
+    code_download: TRUE
+    number_sections: TRUE
+---
+
+# Work in progress
+
+This file is included as an example of a lab that is a work-in-progress. In other words, a file that you don't want to be rendered quite yet. To prevent rendering, 
+add an underscore `_` to its filename, as I've done for this R Markdown document. Once you're done working on it, you can remove the underscore and re-build your site.
+
+(Don't forget to make sure that this file is included in your navbar if you want to link to it from there!)
+
+
+![](images/genius.jpg)
+
+Your genius lab goes here!
+
+
+# Specially-styled questions
+
+To use specially-styled questions like the ones below, place `<div>` tags around them like so: 
+
+```
+<div> class="question">
+
+1. Your first question here.
+2. You second question here.
+
+</div>
+```
+
+<div class="question">
+1. Your first question here.
+
+2. You second question here.
+</div>
