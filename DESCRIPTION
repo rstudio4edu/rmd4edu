@@ -16,4 +16,5 @@ Imports:
     distill,
     bookdown,
     rmarkdown,
-    xfun
+    xfun,
+    whisker
