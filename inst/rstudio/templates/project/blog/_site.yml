@@ -1,12 +1,20 @@
 name: "{{name}}"
 title: "{{title}}"
+favicon: images/favicon.ico
 description: |
   {{title}}
 output_dir: "{{output_dir}}"
+creative_commons: CC BY
 navbar:
+  logo:
+    image: images/logo.png
+    href: https://www.rstudio.com
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true
+    css: rs4edu-distill.css
