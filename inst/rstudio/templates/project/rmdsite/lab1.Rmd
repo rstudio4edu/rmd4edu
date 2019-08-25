@@ -1,0 +1,177 @@
+---
+title: "Lab 1"
+subtitle: "Demo Course"
+author: "Your Name"
+output:
+  html_document:
+    code_folding: hide
+    code_download: true
+    number_sections: true
+---
+
+```{r setup_moma, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(
+  comment = NA, 
+  warning = FALSE, 
+  message = FALSE)
+```
+
+![](images/genius.png){width=15%}
+
+*The content below is an adapted excerpt from [Alison Hill's MoMa Museum Tour Lab](https://apreshill.github.io/data-vis-labs-2018/02-moma.html).*  
+
+# Goals for Lab 1
+
+- Map global plot aesthetics to variables in `ggplot2`
+- Create facetted plots with `ggplot2`
+- Animate your plot using `gganimate`
+
+# Inspiration + data
+
+We'll use data from the Museum of Modern Art (MoMA)
+
+- Publicly available on [GitHub](https://github.com/MuseumofModernArt/collection)
+- As analyzed by [fivethirtyeight.com](https://fivethirtyeight.com/features/a-nerds-guide-to-the-2229-paintings-at-moma/)
+- And by [others](https://medium.com/@foe/here-s-a-roundup-of-how-people-have-used-our-data-so-far-80862e4ce220)
+
+
+# Packages needed
+
+```{r}
+library(tidyverse) # readr, ggplot2, dplyr
+library(gganimate) # to animate our ggplot
+```
+
+Note! This is not the original data- I did a lot of cleaning and decision-making in the pre-processing. The below contains only paintings and drawings in the MoMA collection.
+
+Use this code chunk to read in the data available at [http://bit.ly/cs631-moma](http://bit.ly/cs631-moma):
+
+```{r echo = TRUE}
+library(readr)
+moma <- read_csv("http://bit.ly/cs631-moma")
+```
+
+# Know your data
+
+Before you begin plotting, make sure you take a look at the number of variables and observations in your dataset. Try answering the question below on your own using `dplyr`. 
+
+<div class = "question">
+1. How many paintings (rows) are in moma? 
+
+2. How many variables (columns) are in moma?
+<div>
+
+```{r, results = "hide"}
+library(dplyr)
+moma
+glimpse(moma)
+```
+
+# Plot your data  
+<div class="question">
+
+3. Let's create a plot similar to this one from [fivethirtyeight](https://fivethirtyeight.com/features/a-nerds-guide-to-the-2229-paintings-at-moma/). 
+
+</div>
+
+<center>![](https://fivethirtyeight.com/wp-content/uploads/2015/08/roeder-feature-moma-1.png?w=575){width=50%}</center>  
+
+
+**Things to consider:** 
+
+- You'll want to play around with setting an `alpha` value here- keep in mind that `0` is totally transparent and `1` is opaque. 
+- Try using `geom_abline()` to add the line in red (use the default intercept value of 0). The red line you see in the fivethiryeight article is difficult to recreate- here is what the authors say: "The red regression line shows the “modernizing” of MoMA’s collection — how quickly the museum has moved toward acquiring recent paintings."
+
+
+```{r}
+ggplot(moma, aes(year_created, year_acquired)) +
+  geom_point(alpha = .1, na.rm = TRUE) +
+  geom_abline(intercept = c(0,0), colour = "red") +
+  labs(x = "Year Painted", y = "Year Acquired") +
+  ggtitle("MoMA Keeps Its Collection Current") 
+```
+
+# Group by artist gender
+You can group the data by gender a couple ways.  
+
+__Hint:__ For this to make sense, you probably want to do some filtering to select only those paintings where there was one "solo" artist.
+
+## Color by artist gender
+<div class="question">
+4. Color each data point based on artist gender. You can adjust the alpha value to make the colors easier to distinguish.
+</div>
+
+
+```{r}
+
+moma_solo <- moma %>% 
+  filter(num_artists == 1)
+
+ggplot(moma_solo, aes(year_created, year_acquired, colour = artist_gender)) +
+  geom_point(alpha = .5, na.rm = TRUE) +
+  geom_abline(intercept = c(0,0), colour = "red") +
+  labs(x = "Year Painted", y = "Year Acquired") +
+  ggtitle("MoMA Keeps Its Collection Current") 
+```
+
+
+## Facet by artist gender
+
+It can be difficult to see differences between the data grouped by artist gender when all data points are on the same plot. Let's try to fix this:
+
+<div class="question">
+5. Facet by artist gender instead. Remove the legend that generates automatically.
+</div>
+
+```{r}
+moma_solo <- moma %>% 
+  filter(num_artists == 1)
+ggplot(moma_solo, aes(x= year_created, y = year_acquired, colour = artist_gender)) +
+  geom_point(alpha = .5, na.rm = TRUE, show.legend = FALSE ) +
+  geom_abline(intercept = c(0,0), colour = "red") +
+  labs(x = "Year Painted", y = "Year Acquired") +
+  ggtitle("MoMA Keeps Its Collection Current") +
+  facet_wrap(~artist_gender)
+```
+
+
+# Animate your plot
+
+You can use `gganimate` to animate your plot. 
+
+* You'll animate by adding a `transition_time()` layer to your ggplot. 
+* The argument for `transition_time()` should be whatever variable you want to "cycle" through with each frame of your animation. Usually it is most natural to select a transition variable that is related to time. Make sure you first filter out any observations that are `NA` for this variable before you begin plotting. 
+
+<div class="question">
+6. Start with the plot you made above. Now animate this plot to see how these data vary through the years that the MoMA acquires work. Go ahead an remove the abline for this plot and use the following for your title: `title = 'Year Acquired: {round(frame_time,0)}'`  
+
+__Hint__: Make sure you are not plotting any rows containing `NA`s for the variable that you use as your transition time.
+
+7. Add `shadow_mark()` as a new layer. What does this do to your animation?
+</div>
+
+```{r, cache = TRUE}
+
+library(gganimate)
+library(tidyverse)
+
+moma_solo <- moma %>% 
+  filter(num_artists == 1) %>%
+  filter(!is.na(year_acquired))
+
+ggplot(moma_solo, aes(x= year_created, y = year_acquired, colour = artist_gender)) +
+  geom_point(alpha = .5, na.rm = TRUE) +
+  labs(x = "Year Painted", y = "Year Acquired") +
+  ggtitle("MoMA Keeps Its Collection Current") +
+  facet_wrap(~artist_gender) +
+  # Here comes the gganimate specific bits
+  labs(title = 'Year Acquired: {round(frame_time,0)}', x = 'Year Created', y = 'Year Acquired') +
+  transition_time(year_acquired) +
+  shadow_mark() 
+  
+```
+
+
+\
+
+[![cc-by-nc](images/by-nc.png){width=15%}](http://www.host.com/link.html)

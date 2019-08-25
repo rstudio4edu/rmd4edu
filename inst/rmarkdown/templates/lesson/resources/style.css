@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+
+/*------------- Whole Document---------------- */
+
+body {
+	font-family: 'Muli';
+	font-size: 19px;
+}
+
+/*----------------- links ---------------------*/
+
+a {
+  color: #4e89bf;
+}
+
+a:hover {
+ color: #396892; /* darker color when hovering */
+}
+
+/* --------LOGO, three options-------------*/
+
+/*1: For logo immediately above TOC, use style rule below, otherwise comment out*/
+
+#TOC::before {
+  content: "";
+  display: block;
+  height: 200px;
+  margin: 2.75em 20px 40px 20px;
+  /*background-image: url("logo-black.png");*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* 2: For logo above title in upper righthand corner, inline with Title and Author, use style rule below. Otherwise comment out*/
+
+/*
+#header.fluid-row::before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  float: right;
+  background-image: url("logo-black.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}*/
+
+
+/* option 3 for a logo -- above title and author, when also used with logo.HTML before_body. use style rule below. otherwise comment out*/
+
+/*
+.upper-right-logo {
+  margin-top: 20px;
+  background-image: url("logo-black.png");
+  height: 150px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}*/
+
+
+/*----------------ADDING WHITE SPACE-------------*/
+
+
+ .title {
+      margin-top: 2.75em !important;
+      margin-bottom: 0.75em;
+  }
+
+
+.section h1 {
+      margin-top: 2.5em !important;
+      margin-bottom: 0.75em;
+}
+
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+  padding-top: 1.5em !important;
+  margin-bottom: 0.75em;
+}
+
+/* Space Between TOC and Righthand side content on large screens */
+
+@media (min-width: 992px) {
+  .col-md-9 {
+    width: 75%;
+    padding-left: 5em !important;
+  }
+}
+
+/* Remove excessive white space at the end of page */
+
+.tocify-extend-page {
+  height: 0px !important;
+}
+
+
+/*------------Table of Contents (TOC)----------- */
+
+.tocify {
+      border: none;   /*Removes border */
+      border-radius: 0px; /* Gets rid of rounded corners on TOC */
+      font-size: 16px;
+    }
+
+.tocify ul, .tocify li { /* Increases spacing between TOC headers*/
+        line-height: 25px !important;
+    }
+
+.tocify ul {
+  border-right: solid 1px #eee; /* Thin right border on TOC list */
+}
+
+/* Active TOC links*/
+
+  .list-group-item.active,
+  .list-group-item.active:hover{
+    color: #787878;
+    background-color: #ffffff;
+    border-color: #ccc;
+  }
+
+/* Hovered TOC links*/
+
+.list-group-item:hover {
+  color: #787878;
+  background-color: #ffffff;
+  border: none;
+}
+
+
+
+/* -----------Question counter ---------*/
+
+    body {
+      counter-reset: li;
+    }
+
+    .question ol {
+	    /* Remove the default left padding */
+	    padding-left: 0;
+    }
+
+    .question ol>li {
+    	/* Create a positioning context */
+	    position: relative;
+	    /* Disable the normal item numbering */
+	    list-style: none;
+	    width: 90%;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    padding-right: 0;
+	    padding-left: 120px;
+    }
+
+    .question ol>li:before,
+    .question ol>p>li:before{
+    	/* Use the counter as content */
+	    content: "Question " counter(li) ": ";
+	    /* Increment the counter by 1 */
+	    counter-increment: li;
+	    position: absolute;
+	    color: #5ebccf;
+	    left: -0.5px;
+	    font-weight: bold;
+    }
+
+    .question ol ol {
+      counter-reset: subitem;
+    }
+
+
+/*-------------FOOTER-------------- */
+
+.footer {
+  font-size: .6em;
+  text-transform: uppercase;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+
+/* Divider line above footer */
+.footer hr{
+  margin-top: 7em;
+  width: 100%;
+}
+
+/* rstudio4edu text link */
+.rstudio4edu {
+  color: #3fb5bd;
+  font-family: "Lora";
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer.logo {
+  width: 40px;
+  margin-right: 4px;
+}

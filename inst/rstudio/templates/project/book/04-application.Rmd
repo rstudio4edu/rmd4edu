@@ -5,3 +5,53 @@ Some _significant_ applications are demonstrated in this chapter.
 ## Example one
 
 ## Example two
+
+
+```{r}
+library(tidyverse)
+starwars %>% 
+  count(homeworld, sort = TRUE)
+```
+
+```{r, collapse=TRUE, comment = "#>"}
+library(tidyverse)
+starwars %>% 
+  count(homeworld, sort = TRUE)
+```
+
+
+Our `setup` code chunk above affects *all* code chunks. It is called a global chunk option for that reason. You can (and should) use individual chunk options too, but setting up some nice ones that apply to all code chunks can save you time and can lessen your cognitive load as you create your content.
+
+
+
+
+
+## Two plots side-by-side
+
+```{r dodge-st, fig.show = 'hold', out.width = '50%'}
+ggplot(mtcars, aes(factor(cyl), fill = factor(vs))) +
+  geom_bar(position = position_dodge(preserve = "total"))
+
+ggplot(mtcars, aes(factor(cyl), fill = factor(vs))) +
+  geom_bar(position = position_dodge2(preserve = "total"))
+```
+
+
+## Include verbatim code chunks
+
+You may have noticed that the code chunk output, even when `echo=TRUE`, does not show the actual code chunk options that you see in your .Rmd file. In order to print the full code chunk, you'll need to 
+
++ [verbatim code chunks](https://yihui.name/en/2017/11/knitr-verbatim-code-chunk/)
+
++ `knitr` [ref.label](https://yihui.name/knitr/demo/reference/) to reuse code chunks
++ the `fig.path` thing: https://yihui.name/knitr/options/#plots (see also: name your code chunks!)
++ making sure that your package warnings/messages don't print!
++ how to control numbers of digits that print 
++ control significance stars
+
+```{r}
+options(
+  show.signif.stars = FALSE,     
+  digits = 2
+  )
+```

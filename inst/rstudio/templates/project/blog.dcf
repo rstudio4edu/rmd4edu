@@ -1,6 +1,7 @@
 Binding: new_project_create_blog
 Title: rstudio4edu blog using Distill
 OpenFiles: _posts/welcome/welcome.Rmd, index.Rmd, about.Rmd, _site.yml
+Icon: rstudio4edu.png
 
 Parameter: title
 Default: Desiree's blog
@@ -13,5 +14,4 @@ Default: On
 Widget: CheckboxInput
 Label: Configure for GitHub Pages
 Position: right
-
 

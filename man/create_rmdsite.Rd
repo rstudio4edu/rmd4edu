@@ -2,12 +2,34 @@
 % Please edit documentation in R/create_rmdsite.R
 \name{create_rmdsite}
 \alias{create_rmdsite}
-\title{from rmarkdown
-and the distill packages}
+\title{Create an `rstudio4edu` website with R Markdown}
 \usage{
 create_rmdsite(dir, title, gh_pages = FALSE, edit = interactive())
 }
+\arguments{
+\item{dir}{Directory for website}
+
+\item{title}{Title of website}
+
+\item{gh_pages}{Configure the site for publishing using [GitHub
+Pages](https://pages.github.com/)}
+
+\item{edit}{Open site index file or welcome post in an editor.}
+}
 \description{
-from rmarkdown
-and the distill packages
+Create a basic skeleton for an `rstudio4edu` website. Use the `create_rmdsite()`
+function for a website, or alternately you may use the project wizard in the
+RStudio IDE to make a new website within an R project. If you want to learn
+how to make this R Markdown website from scratch, please see:
+https://rstudio4edu.github.io/rstudio4edu-book/intro-rmd.html
+}
+\note{
+The `dir` and `title` parameters are required (they will be prompted for
+  interatively if they are not specified).
+}
+\examples{
+\dontrun{
+library(rmd4edu)
+create_rmdsite("mysite", "My Site")
+}
 }

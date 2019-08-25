@@ -1,0 +1,5 @@
+name: rstudio4edu lesson
+description: >
+   An R Markdown document template, designed to make an
+   individual HTML lesson for a course or a workshop.
+create_dir: true
