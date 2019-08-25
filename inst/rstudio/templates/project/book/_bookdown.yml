@@ -1,4 +1,15 @@
+output_dir: "docs"
 delete_merged_file: true
+rmd_files:
+- index.Rmd
+- 01-intro.Rmd
+- 04-application.Rmd
+- 02-literature.Rmd
+- 03-method.Rmd
+- 05-summary.Rmd
+- 06-references.Rmd
+- appendix.Rmd
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: 'Chapter '
+new_session: yes
