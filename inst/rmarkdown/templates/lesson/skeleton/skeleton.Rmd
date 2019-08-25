@@ -34,7 +34,10 @@ To add a logo, do one of two things:
     knitr::include_graphics("rstudio4edu-logo.png")
     ```
 
-    Pretty, right? We like it. Feel free to use it.
+    Pretty, right? We like it. Feel free to use it.  
+\
+
+*\*If you don't want a logo at all--then delete the code chunk or set it to* `eval = FALSE`.
 
 # Adding questions
 
@@ -60,8 +63,27 @@ You can add text here too.
 1. Your second question here.
 </div>
 
+# Add a footer
+
+If you want a custom footer, then add your footer text within the designated `<p>` `</p>` tags at the bottom of this lesson.
+
 # Goodbye!
 
 Check out our online book at [rstudio4edu](https://rstudio4edu.github.io/rstudio4edu-book/).
 
 Don't forget to delete all this text before you release your lesson out into the wild - happy educating!
+
+
+
+<!--Footer content below this line -->
+
+<div class="footer">
+
+  <hr>
+
+  <p> <!--your footer text can go here--> </p>
+
+  <p class="rstudio4edu-footer">This site was created with an <a class="rstudio4edu-link" href="https://rstudio4edu.github.io/rstudio4edu-book/"> <img class="rstudio4edu-footer-logo" src="rstudio4edu-logo.png">&nbsp;rstudio4edu</a> template.</p>
+
+
+</div>

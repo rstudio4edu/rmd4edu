@@ -28,7 +28,7 @@ rstudio4edu_lesson = function(toc = TRUE, ...) {
     code_download = TRUE,
     number_sections = FALSE,
     css = css,
-    includes = rmarkdown::includes(after_body = footer),
+    #includes = rmarkdown::includes(after_body = footer),
     ...
   )
 }
