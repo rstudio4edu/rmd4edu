@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Muli:400,400i,700&display=swap');
 
 /*------------- Whole Document---------------- */
 
@@ -9,7 +9,7 @@ body {
 
 
 /* links */
-a { 
+a {
   color: #5ebccf;
 }
 
@@ -26,10 +26,10 @@ a:hover {
 }
 
 .section h1,
-.section h2, 
-.section h3, 
-.section h4, 
-.section h5 { 
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
   padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
   margin-bottom: 0.75em;
 }
@@ -58,8 +58,8 @@ a:hover {
       background-position: center center;
       background-repeat: no-repeat;
     }
-    
-    
+
+
 /* 2: For logo above title in upper righthand corner, inline with Title and Author, use style rule below. Otherwise comment out*/
 
 /*
@@ -68,7 +68,7 @@ a:hover {
       height: 150px;
       width: 150px;
       float: right;
-      background-image: url("logo-black.png");
+      background-image: url("../images/logo-black.png");
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
@@ -80,7 +80,7 @@ a:hover {
 /*
 .upper-right-logo {
   margin-top: 20px;
-  background-image: url("logo-black.png");
+  background-image: url("../images/logo-black.png");
   height: 150px;
   background-size: contain;
   background-position: right;
@@ -95,7 +95,7 @@ a:hover {
 .hero-image {
     position: relative;
     /* liner gradient tints the image darker for readability*/
-    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(../images/hero.jpg); 
+    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(../images/hero-navy.jpg);
     height: 400px;
     background-size: cover;
     background-color: #141c25f2;
@@ -126,7 +126,7 @@ a:hover {
   color: #ffffff;
   margin-bottom: 2.5rem;
   font-weight: bold;
-}  
+}
 
 /*-----------------TOC----------------*/
 
@@ -139,7 +139,7 @@ a:hover {
 
 .tocify {
   position: -webkit-sticky;
-  position: sticky; 
+  position: sticky;
   top: 120px; /*Controls where TOC stops when sticky */
   width: 100% !important;
   border: none;
@@ -152,7 +152,7 @@ a:hover {
   .col-xs-12.col-sm-4.col-md-3 {
     display: none;
   }
-  
+
   .top-text {
     font-size: 25px;
   }
@@ -160,7 +160,7 @@ a:hover {
   .bottom-text {
     font-size: 40px;
   }
-  
+
 }
 
 /* TOC links */
@@ -176,7 +176,7 @@ a:hover {
     border: none;
 }
 
-.list-group-item:hover, 
+.list-group-item:hover,
 .list-group-item.active:hover {
     color: #131b23;
     background-color: white;
@@ -188,8 +188,8 @@ a:hover {
     background-color: #141c25f2;
 }
 
-.navbar-default .navbar-nav>.open>a, 
-.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a,
 a.dropdown-toggle:hover {
   background-color: #141c25 !important;
 }
@@ -199,15 +199,17 @@ a.dropdown-toggle:hover {
   background-color: #141c25;
 }
 
+
 /* Dropdown menu hover color */
   .navbar-default .dropdown-menu>li>a:hover {
     background-color: #202831f2;
   }
 
 /* Navbar Links when hovered*/
-.navbar-default .navbar-nav>.active>a:hover, 
-.navbar-default .navbar-nav:hover, 
-.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav:hover,
+.navbar-default .navbar-nav>li>a:hover,
 a.navbar-brand:hover {
   color: #ffffffab !important;
   background-color: #141c25;
@@ -254,23 +256,21 @@ a.navbar-brand:hover {
   }
 
 
+/*------------FOOTER----------*/
+
 /* Divider line above footer */
 .footer hr{
   width: 100%;
+  padding-bottom: 1em;
 }
 
 .footer {
+  margin: 3em 0 !important;
   font-size: 16px;
   color: #808080;
   text-align: center;
   width: 90%;
-  margin: 3rem auto;
   font-weight: 300;
-}
-
-.footer.logo {
-  width: 25px;
-  margin: 0px !important;
 }
 
 .rstudio4edu-footer {
@@ -278,6 +278,27 @@ a.navbar-brand:hover {
   text-transform: uppercase;
 }
 
+.rstudio4edu-link {
+  color: #3fb5bd;
+  font-family: "Lora";
+  text-transform: none;
+  font-weight: 600;
+  font-size: 1.25em;
+  display: inline-block;
+
+}
+
+.rstudio4edu-link:hover {
+  text-decoration: none;
+  color: #5ebccf;
+}
+
+.rstudio4edu-footer-logo {
+  width: 25px;
+  margin: 0px;
+}
+
 .tocify-extend-page {
   height: 0px !important; /* Gets rid of extra space after footer*/
 }
+
