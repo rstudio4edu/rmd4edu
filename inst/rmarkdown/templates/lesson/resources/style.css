@@ -174,36 +174,44 @@ a:hover {
     }
 
 
-/*-------------FOOTER-------------- */
-
-.footer {
-  font-size: .6em;
-  text-transform: uppercase;
-  color: #808080;
-  text-align: center;
-  width: 90%;
-  margin: 3rem auto;
-  font-weight: 300;
-}
+/*------------FOOTER----------*/
 
 /* Divider line above footer */
 .footer hr{
-  margin-top: 7em;
   width: 100%;
+  padding-bottom: 1em;
 }
 
-/* rstudio4edu text link */
-.rstudio4edu {
+.footer {
+  margin: 3em 0 !important;
+  font-size: 16px;
+  color: #808080;
+  text-align: center;
+  width: 90%;
+  font-weight: 300;
+}
+
+.rstudio4edu-footer {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.rstudio4edu-link {
   color: #3fb5bd;
   font-family: "Lora";
-  font-size: 1.25em;
-  font-weight: 600;
   text-transform: none;
-  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25em;
   display: inline-block;
+
 }
 
-.footer.logo {
-  width: 40px;
-  margin-right: 4px;
+.rstudio4edu-link:hover {
+  text-decoration: none;
+  color: #5ebccf;
+}
+
+.rstudio4edu-footer-logo {
+  width: 25px;
+  margin: 0px;
 }

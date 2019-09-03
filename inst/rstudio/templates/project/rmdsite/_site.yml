@@ -37,6 +37,6 @@ output:
     toc: true
     toc_float: true
     includes:
+      in_header: assets/header.html
       after_body: assets/footer.html
     css: assets/style.css
-    
