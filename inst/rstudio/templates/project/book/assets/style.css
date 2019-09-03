@@ -34,6 +34,11 @@ pre code {
   margin: 0 !important; /* makes space above and below symmetrical*/
 }
 
+.sourceCode {
+  margin-bottom: 0.85em; /* adds same amount of margin below chunk as a <p> would */
+}
+
+
 /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
